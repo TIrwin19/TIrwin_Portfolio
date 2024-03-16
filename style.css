@@ -1,18 +1,19 @@
-:root{
-
+:root {
+    --title-color: rgb(41, 41, 41);
+    --Cream-color: #ebeae8;
 }
 
 /* RESETS */
-*{
+* {
     margin: 0;
     padding: 0;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 html,
 body {
     height: 100%;
-    background-color: rgb(207, 207, 156);
+    background-color: var(--Cream-color);
 }
 
 /* body {
@@ -23,3 +24,112 @@ img {
 
 } */
 
+
+
+header {
+    /* display: flex; */
+    background-color: var(--title-color);
+    padding: 15px 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16pt;
+}
+
+header nav a {
+    color: var(--Cream-color);
+    text-decoration: none;
+}
+
+header a.second {
+    padding: 0 50px;
+}
+
+
+figure section a {
+    color: var(--title-color);
+    text-decoration: none;
+}
+
+figure section a:hover {
+    color: var(--Cream-color);
+}
+
+figure.title-image {
+    height: 96.2vh;
+    width: 100%;
+    background-image: url(assets/images/GC.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+figure {
+    position: relative;
+}
+
+figure section {
+    padding: 5px 0;
+    position: absolute;
+    top: 21%;
+    left: 50%;
+    /* CENTERS AN ELEMENT WITHIN ITS CONTAINING ELEMENT */
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* position: relative; */
+}
+
+figure .title-text {
+    font-size: 80pt;
+}
+
+/* figure .title-text::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: var(--title-color);
+    border-radius: 3px;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+} */
+
+figure .title-text-2 {
+    font-size: 40pt;
+    /* padding: 0 0 10px 0; */
+}
+
+figure .title-text-3 {
+    font-size: 20pt;
+}
+
+h2.my-projects {
+    padding: 10px 3%;
+    font-size: 30pt;
+}
+
+main {
+    padding: 0 3%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+main section img{
+    border-radius: 10px;
+}
+
+main section{
+    display: flex;
+    background-color: aqua;
+    border-radius: 10px;
+    padding: 10px 5px;
+}
+
+main section.first-project{
+    grid-column: 1 / 3;
+}
