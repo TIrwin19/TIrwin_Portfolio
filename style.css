@@ -18,16 +18,11 @@ body {
 
 /* body {
 
-}
-
-img {
-
-} */
+}*/
 
 
 
 header {
-    /* display: flex; */
     background-color: var(--title-color);
     padding: 15px 0;
 }
