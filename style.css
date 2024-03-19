@@ -13,12 +13,15 @@
     padding: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
-html {
-    height: 100%;
+ 
+html,
+body {
+    /* height: 100%; */
+    /* box-sizing: border-box; */
 }
 
 body {
+    height: 100%;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -38,7 +41,7 @@ header nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 16pt;
+    font-size: 131%;
 }
 
 header nav a {
@@ -62,7 +65,7 @@ header nav a::after{
 
 header nav a:hover::after{
     width: 100%;
-    background-color: var(--highlight);
+    background-color: var(--Cream-color);
 }
 
 
@@ -85,7 +88,7 @@ figure section a:hover {
 
 figure.title-image {
     /* height: 96.2vh; */
-    height: 50vh;
+    height: 60vh;
     width: 100%;
     background-image: url(assets/images/GC.jpg);
     background-size: cover;
@@ -103,10 +106,8 @@ figure section {
     /* background: rgba(255, 255, 255, .7); */
 }
 
-
-
 figure .title-text {
-    font-size: 80pt;
+    font-size: 625%;
     border-top-left-radius:8px;
     border-top-right-radius:8px;
     height: 120px
@@ -124,23 +125,27 @@ figure .title-text {
 } */
 
 figure .title-text-2 {
-    font-size: 40pt;
+    font-size: 333%;
     border-radius:8px;
 }
 
 figure .title-text-3 {
-    font-size: 20pt;
+    font-size: 167%;
     border-bottom-left-radius:8px;
     border-bottom-right-radius:8px;
 }
 
+figure section a.link{
+    transition: 1s;
+}
+
 figure section a.link:hover{
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, .8);
 }
 
 h2.my-projects {
     padding: 20px 3%;
-    font-size: 30pt;
+    font-size: 250%;
     color: var(--Cream-color);
 
 }
@@ -157,6 +162,7 @@ main {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
+
 
 /* main section img{
     border-radius: 10px;
@@ -178,7 +184,6 @@ main section.first-project {
     background-image: url(assets/images/laptop_xl.jpg);
     background-size: cover;
     background-position: bottom;
-    background-color: rgba(255, 255, 255, .7);
 }
 
 main section.second-project {
@@ -218,16 +223,74 @@ main section .main-highlight{
     width: max-content;
     padding: 0 8px;
     border-radius: 10px;
+    transition: 1s;
 }
 
 main section .main-highlight:hover{
     color: var(--title-text);
-    background-color: rgba(255, 255, 255, .7);
+    background-color: rgba(255, 255, 255, .8);
 }
 
-Aside {
-    background-color: lightgray;
+main section .main-highlight a{
+    color: var(--Cream-color);
+    text-decoration: none;
+    transition: 1s;
 }
+
+main section .main-highlight a:hover{
+    color: var(--title-text);
+}
+
+.contact-image{
+    background-image: url(assets/images/contact.jpg);
+    background-position:bottom;
+    background-size: cover;
+    height: 89vh;
+
+}
+
+.contact-head{
+    margin: 170px auto 0;
+    color: var(--Cream-color);
+    background-color: rgba(0, 0, 0, .7);
+    width: max-content;
+    padding: 0 8px;
+    border-radius: 5px;
+    font-size: 250%;
+    
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    margin: 35px auto 0;
+    background-color: rgba(0, 0, 0, .7);
+    border-radius: 5px;
+    padding: 7px
+}
+
+form > *{
+    padding: 7px 15px;
+    margin: 5px 0;
+}
+
+form button{
+    background: var(white);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s
+}
+
+form button:hover{
+    background-color: var(--title-color);
+    color: var(--Cream-color);
+}
+
+/* Aside {
+    background-color: lightgray;
+} */
 
 footer {
     margin-top: auto;
@@ -243,6 +306,7 @@ footer div a {
     color: var(--Cream-color);
     text-decoration: none;
     padding: 0 10px;
+    transition: 1s;
 }
 
 footer a:hover {
@@ -251,4 +315,36 @@ footer a:hover {
 
 footer p {
     padding: 7px 0;
+}
+
+@media (min-width: 1280px){
+    h2.my-projects{
+        font-size: 280%;
+    }
+    
+    main {
+        font-size: 130%;
+    }
+}
+
+@media (max-width: 555px){
+    body {
+        font-size: 12px;
+    }
+
+    figure .title-text{
+        height: auto;
+    }
+
+}
+
+@media (max-width: 505px){
+
+    main{
+        display: inline;
+    }
+
+    main section{
+        margin: 3% 0;
+    }
 }
