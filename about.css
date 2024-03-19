@@ -169,6 +169,22 @@ footer p {
 
 @media (max-width: 1280px) {
     .about-main p {
-        margin: 0 10%;
+        margin: 0 10% 10%;
+    }
+
+    .about-image {
+        width: 30vw;
+    }
+}
+
+@media (max-width: 780px) {
+    .about-image {
+        width: 40vw;
+    }
+}
+
+@media (max-width: 430px) {
+    .about-image {
+        width: 50vw;
     }
 }
