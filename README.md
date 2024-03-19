@@ -1,5 +1,4 @@
-# T. Irwin Portfolio
-# Code Refactor Starter Code 
+ # T. Irwin Portfolio
 ## Author: Francis Reyes- Module 1 
 
 
