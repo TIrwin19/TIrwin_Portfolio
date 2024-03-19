@@ -13,12 +13,12 @@
     padding: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
- 
-html,
+
+/* html,
 body {
-    /* height: 100%; */
-    /* box-sizing: border-box; */
-}
+    height: 100%;
+    box-sizing: border-box;
+} */
 
 body {
     height: 100%;
@@ -28,9 +28,10 @@ body {
     background-color: var(--gray-background);
 }
 
-/* END PRESETS */
-
-/* body {} */
+.about-body{
+    background-color: lightslategray;
+}
+/* END RESETS */
 
 header {
     background-color: var(--gray-background);
@@ -50,7 +51,7 @@ header nav a {
     position: relative;
 }
 
-header nav a::after{
+header nav a::after {
     position: absolute;
     content: '';
     width: 100%;
@@ -63,7 +64,7 @@ header nav a::after{
     transition: width 1s, background-color .5s;
 }
 
-header nav a:hover::after{
+header nav a:hover::after {
     width: 100%;
     background-color: var(--Cream-color);
 }
@@ -108,8 +109,8 @@ figure section {
 
 figure .title-text {
     font-size: 625%;
-    border-top-left-radius:8px;
-    border-top-right-radius:8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
     height: 120px
 }
 
@@ -126,20 +127,21 @@ figure .title-text {
 
 figure .title-text-2 {
     font-size: 333%;
-    border-radius:8px;
+    border-radius: 8px;
+    font-style: italic ;
 }
 
 figure .title-text-3 {
     font-size: 167%;
-    border-bottom-left-radius:8px;
-    border-bottom-right-radius:8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 
-figure section a.link{
+figure section a.link {
     transition: 1s;
 }
 
-figure section a.link:hover{
+figure section a.link:hover {
     background-color: rgba(0, 0, 0, .8);
 }
 
@@ -150,12 +152,12 @@ h2.my-projects {
 
 }
 
-figure .title-highlight{
+figure .title-highlight {
     background: rgba(255, 255, 255, .6);
     padding: 0 10px;
 }
 
-main {
+main.main-portfolio{
     flex: 1;
     padding: 0 3%;
     display: grid;
@@ -163,17 +165,10 @@ main {
     gap: 20px;
 }
 
-
-/* main section img{
-    border-radius: 10px;
-} */
-
 main section {
     background-color: var(--Cream-color);
     padding: 10px 10px;
     border: 5px solid black;
-    /* border-color: black;
-    border-width: 5px; */
     border-radius: 10px;
 }
 
@@ -218,7 +213,7 @@ main section.fifth-project {
     background-position: center;
 }
 
-main section .main-highlight{
+main section .main-highlight {
     background-color: rgba(0, 0, 0, .7);
     width: max-content;
     padding: 0 8px;
@@ -226,30 +221,67 @@ main section .main-highlight{
     transition: 1s;
 }
 
-main section .main-highlight:hover{
+main section .main-highlight:hover {
     color: var(--title-text);
     background-color: rgba(255, 255, 255, .8);
 }
 
-main section .main-highlight a{
+main section .main-highlight a {
     color: var(--Cream-color);
     text-decoration: none;
     transition: 1s;
 }
 
-main section .main-highlight a:hover{
+main section .main-highlight a:hover {
     color: var(--title-text);
 }
 
-.contact-image{
+.about-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-image{
+    width: 20vw;
+    height: auto;
+    border: 5px solid black;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.about-main h1{
+    margin: 35px 0 20px 0;
+    color: var(--Cream-color);
+    background-color: var(--gray-background);
+    padding: 0 7px;
+    border-radius: 8px;
+}
+
+.about-main h2{
+    margin: 5px 0 0;
+}
+
+.about-main h3{
+    margin: 0 0 25px;
+}
+
+.about-main p{
+    background-color: var(--Cream-color);
+    border-radius: 8px;
+    padding: 0 5px;
+    margin: 0 3%;
+}
+
+.contact-image {
     background-image: url(assets/images/contact.jpg);
-    background-position:bottom;
+    background-position: bottom;
     background-size: cover;
     height: 89vh;
 
 }
 
-.contact-head{
+.contact-head {
     margin: 170px auto 0;
     color: var(--Cream-color);
     background-color: rgba(0, 0, 0, .7);
@@ -257,10 +289,10 @@ main section .main-highlight a:hover{
     padding: 0 8px;
     border-radius: 5px;
     font-size: 250%;
-    
+
 }
 
-form{
+form {
     display: flex;
     flex-direction: column;
     width: 450px;
@@ -270,12 +302,12 @@ form{
     padding: 7px
 }
 
-form > *{
+form>* {
     padding: 7px 15px;
     margin: 5px 0;
 }
 
-form button{
+form button {
     background: var(white);
     border: none;
     border-radius: 5px;
@@ -283,7 +315,7 @@ form button{
     transition: .5s
 }
 
-form button:hover{
+form button:hover {
     background-color: var(--title-color);
     color: var(--Cream-color);
 }
@@ -317,34 +349,38 @@ footer p {
     padding: 7px 0;
 }
 
-@media (min-width: 1280px){
-    h2.my-projects{
+@media (min-width: 1280px) {
+    h2.my-projects {
         font-size: 280%;
     }
-    
+
     main {
         font-size: 130%;
     }
 }
 
-@media (max-width: 555px){
+@media (max-width: 555px) {
     body {
         font-size: 12px;
     }
 
-    figure .title-text{
+    figure .title-text {
         height: auto;
     }
 
 }
 
-@media (max-width: 505px){
+@media (max-width: 505px) {
 
-    main{
+    main.main-portfolio {
         display: inline;
     }
 
-    main section{
+    main section {
         margin: 3% 0;
+    }
+
+    form{
+        width: 300px;
     }
 }
