@@ -28,9 +28,6 @@ body {
     background-color: var(--gray-background);
 }
 
-.about-body{
-    background-color: lightslategray;
-}
 /* END RESETS */
 
 header {
@@ -75,7 +72,7 @@ header nav a:hover::after {
 } */
 
 header a.second {
-    padding: 0 50px;
+    margin: 0 50px;
 }
 
 figure section a {
@@ -128,7 +125,7 @@ figure .title-text {
 figure .title-text-2 {
     font-size: 333%;
     border-radius: 8px;
-    font-style: italic ;
+    font-style: italic;
 }
 
 figure .title-text-3 {
@@ -157,7 +154,7 @@ figure .title-highlight {
     padding: 0 10px;
 }
 
-main.main-portfolio{
+main.main-portfolio {
     flex: 1;
     padding: 0 3%;
     display: grid;
@@ -234,43 +231,6 @@ main section .main-highlight a {
 
 main section .main-highlight a:hover {
     color: var(--title-text);
-}
-
-.about-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.about-image{
-    width: 20vw;
-    height: auto;
-    border: 5px solid black;
-    border-radius: 8px;
-    overflow: hidden;
-}
-
-.about-main h1{
-    margin: 35px 0 20px 0;
-    color: var(--Cream-color);
-    background-color: var(--gray-background);
-    padding: 0 7px;
-    border-radius: 8px;
-}
-
-.about-main h2{
-    margin: 5px 0 0;
-}
-
-.about-main h3{
-    margin: 0 0 25px;
-}
-
-.about-main p{
-    background-color: var(--Cream-color);
-    border-radius: 8px;
-    padding: 0 5px;
-    margin: 0 3%;
 }
 
 .contact-image {
@@ -380,7 +340,7 @@ footer p {
         margin: 3% 0;
     }
 
-    form{
+    form {
         width: 300px;
     }
 }
