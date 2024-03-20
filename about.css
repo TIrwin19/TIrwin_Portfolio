@@ -166,23 +166,23 @@ footer p {
 
 /* START MEDIA QUERIES */
 @media (max-width: 1280px) {
-    .about-main p {
+    main.about-main p {
         margin: 0 10% 10%;
     }
 
-    .about-image {
+    main img.about-image {
         width: 30vw;
     }
 }
 
 @media (max-width: 780px) {
-    .about-image {
+    main img.about-image {
         width: 40vw;
     }
 }
 
 @media (max-width: 430px) {
-    .about-image {
+    main img.about-image {
         width: 50vw;
     }
 }
