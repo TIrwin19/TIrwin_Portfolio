@@ -1,3 +1,6 @@
+/* THIS STYLESHEET CONTAINS STYLES FOR THE about.html */
+
+/* COLORS THAT ARE USED MULTIPLE TIMES ON DIFFERENT FILES ARE STORED HERE */
 :root {
     --title-color: rgb(41, 41, 41);
     --Cream-color: #ebeae8;
@@ -26,9 +29,9 @@ body {
     min-height: 100vh;
     background-color: var(--gray-background);
 }
-
 /* END RESETS */
 
+/* START HEADER STYLES */
 header {
     background-color: var(--gray-background);
     padding: 15px 0;
@@ -65,15 +68,13 @@ header nav a:hover::after {
     background-color: var(--Cream-color);
 }
 
-
-/* header nav a:hover {
-    color: var(--highlight);
-} */
-
 header a.second {
     margin: 0 50px;
 }
+/* END HEADER STYLES */
 
+/* START MAIN STYLES */
+/* Backrounmd image styles */
 .about-main {
     background-image: url(assets/images/mountain.jpg);
     background-position: center;
@@ -86,17 +87,16 @@ header a.second {
     align-items: center;
 }
 
-.about-image {
+main img.about-image {
     width: 20vw;
     height: auto;
     /* border: 5px solid black; */
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.7);
-
 }
 
-.about-main h1 {
+main.about-main h1 {
     margin: 35px 0 20px 0;
     color: var(--Cream-color);
     background-color: rgba(40, 44, 53, 0.7);
@@ -106,7 +106,7 @@ header a.second {
     box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.7);
 }
 
-.about-main section{
+main.about-main section{
     font-size: 120%;
     display: flex;
     flex-direction: column;
@@ -118,14 +118,13 @@ header a.second {
     border-radius: 5px;
     /* border: 5px solid black; */
     box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.7);
-
 }
 
-.about-main h2 {
+main.about-main h2 {
     border-bottom: 3px solid var(--Cream-color);
 }
 
-.about-main p {
+main.about-main p {
     color: var(--Cream-color);
     font-size: 150%;
     background-color: rgba(40, 44, 53, 0.7);
@@ -135,13 +134,10 @@ header a.second {
     margin: 0 10% 10%;
     width: 60%;
     box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.7);
-
 }
+/* END MAIN STYLES */
 
-/* .aboout-main a {
-   
-} */
-
+/* START FOOTER STYLER */
 footer {
     margin-top: auto;
     display: flex;
@@ -166,7 +162,9 @@ footer a:hover {
 footer p {
     padding: 7px 0;
 }
+/* END FOOTER STYLES */
 
+/* START MEDIA QUERIES */
 @media (max-width: 1280px) {
     .about-main p {
         margin: 0 10% 10%;
@@ -188,3 +186,6 @@ footer p {
         width: 50vw;
     }
 }
+/* END MEDIA QUERIES */
+
+/* END STYLESHEET */
