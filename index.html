@@ -1,11 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- Head contains meta data, the link for the style sheet, and the title displayed on the web tab -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>T. Irwin Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <title>T. Irwin | Portfolio</title>
 </head>
+
 <body>
-    
+    <!-- Header displayes at the top of the page and contains three link elements -->
+    <Header>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a class="second" href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+    </Header>
+    <!-- The figure elements has a class to display a backround image and some other h1, paragrapg, and link elements -->
+    <figure class="title-image">
+
+        <section>
+            <h1 class="title-text title-highlight">T.Irwin</h1>
+            <p class="title-text-2 title-highlight">Fullstack Student</p>
+            <p class="title-text-3 title-highlight">Rutgers Coding Bootcamp</p>
+            <!-- This link has an id so when clicked it takes the reader further down the page to view selected content -->
+            <a class="title-text-3 title-highlight link" href="#see-my-projects">See My Projects</a>
+        </section>
+
+    </figure>
+
+    <h2 class="my-projects">My Projects</h2>
+    <!-- The main element coontains a class to order it's children into a grid and an id attached to the link in the figure element -->
+    <main class="main-portfolio" id="see-my-projects">
+        <!-- This section contains a link to a deployed website project -->
+        <section class="first-project">
+            <div class="main-highlight">
+                <h2><a href="https://tirwin19.github.io/Horiseon_code_refactor/">Horiseon Code Refractor</a></h2>
+                <p>Brought a simple webside up to SOE coding standards. </p>
+            </div>
+        </section>
+        <!-- All sections below are filled with placeholder content for future use -->
+        <section class="second-project">
+            <div class="main-highlight">
+                <h2>Second Project</h2>
+                <p>Description</p>
+            </div>
+        </section>
+
+        <section class="third-project">
+            <div class="main-highlight">
+                <h2>Third Project</h2>
+                <p>Description</p>
+            </div>
+        </section>
+
+        <section class="fourth-project">
+            <div class="main-highlight">
+                <h2>Fourth Projrct</h2>
+                <p>Description</p>
+            </div>
+        </section>
+
+        <section class="fifth-project">
+            <div class="main-highlight">
+                <h2>Fifth Project</h2>
+                <p>Description</p>
+            </div>
+        </section>
+        <!-- Aside is for future use -->
+        <!-- <Aside>
+            <Article>
+                <h3>Thing 1</h3>
+            </Article>
+            
+            <Article>
+                <h3>Thing 2</h3>
+            </Article>
+            
+            <Article>
+                <h3>Thing 3</h3>
+            </Article>
+            
+        </Aside> -->
+
+    </main>
+    <!-- The div is to group the links together for styling -->
+    <Footer>
+        <div>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="https://github.com/TIrwin19">GitHub</a>
+        </div>
+        <p>&copy 2024 T. Irwin</p>
+    </Footer>
+
 </body>
+
 </html>

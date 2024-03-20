@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Head contains meta data, the link for the style sheet, and the title displayed on the web tab -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>T. Irwin | Contact</title>
+</head>
+<!-- Body element contains all content displayed -->
+
+<body>
+    <!-- Header displayes at the top of the page and contains three link elements -->
+    <Header>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a class="second" href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+    </Header>
+    <!-- Main element has a class to display a background image and contains h1 and form elements -->
+    <main class="contact-image">
+        <h1 class="contact-head">Contact Me</h1>
+        <!-- The form elements contains inputs that display as a contact form and use a third party capture service to send the information to an attached -->
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="03f768e4-3141-4d31-bc00-303638141468">
+            <input name="name" type="text" placeholder="Enter your name">
+            <input name="email" type="email" placeholder="Enter your email">
+            <textarea name="message" cols="30" rows="10" placeholder="Type your message"></textarea>
+            <!-- Button that is used to submit the form -->
+            <button>Submit</button>
+        </form>
+    </main>
+    <!-- Fotter contains three links and a paragraph element -->
+    <Footer>
+        <!-- The div is to group the links together for styling -->
+        <div>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="https://github.com/TIrwin19">GitHub</a>
+        </div>
+        <p>&copy 2024 T. Irwin</p>
+    </Footer>
+</body>
+
+
+</html>
