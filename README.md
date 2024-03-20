@@ -16,7 +16,7 @@ The assignment entailed creating and deploying a website using HTML and CSS to m
 
 ## Deployment
 
-Provided as a link here - [Module 01](Your_REPO_LINK)
+Provided as a link here - https://tirwin19.github.io/TIrwin_Portfolio/
 
 ## Usage
 
