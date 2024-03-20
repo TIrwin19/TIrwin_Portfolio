@@ -184,7 +184,7 @@ main section.second-project {
 main section.third-project {
     color: var(--Cream-color);
     padding: 3% 40px;
-    background-image: url(assets/images/laptop.jpg);
+    background-image: url(assets/images/night_city.jpg);
     background-size: cover;
     background-position: bottom;
 }
