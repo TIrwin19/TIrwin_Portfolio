@@ -112,7 +112,7 @@ figure .title-text {
 
 figure .title-text-2 {
     font-size: 333%;
-    border-radius: 8px;
+    border-radius: 10px;
     font-style: italic;
 }
 
@@ -122,10 +122,18 @@ figure .title-text-3 {
     border-bottom-right-radius: 8px;
 }
 
+/* figure hr{
+    margin: 1rem 0;
+    color: ;
+    background-color: ;
+    border: 0;
+    opacity: ;
+} */
+
 figure .title-text-4 {
     padding: 3px 10px;
     font-size: 167%;
-    margin-top: 5px;
+    margin-top: 7px;
     background: rgba(255, 255, 255, .6);
     border: 3px solid black;
     border-radius: 8px;
