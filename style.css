@@ -83,10 +83,6 @@ figure section a {
     text-decoration: none;
 }
 
-figure section a:hover {
-    color: var(--Cream-color);
-}
-
 /* Main background image displayed at top of page */
 figure.title-image {
     height: 60vh;
@@ -116,7 +112,7 @@ figure .title-text {
 
 figure .title-text-2 {
     font-size: 333%;
-    border-radius: 8px;
+    border-radius: 10px;
     font-style: italic;
 }
 
@@ -126,25 +122,45 @@ figure .title-text-3 {
     border-bottom-right-radius: 8px;
 }
 
+/* figure hr{
+    margin: 1rem 0;
+    color: ;
+    background-color: ;
+    border: 0;
+    opacity: ;
+} */
+
+figure .title-text-4 {
+    padding: 3px 10px;
+    font-size: 167%;
+    margin-top: 7px;
+    background: rgba(255, 255, 255, .6);
+    border: 3px solid black;
+    border-radius: 8px;
+}
+
 figure section a.link {
-    transition: 1s;
+    transition: .8s;
 }
 
 figure section a.link:hover {
     background-color: rgba(0, 0, 0, .8);
-}
-
-h2.my-projects {
-    padding: 20px 3%;
-    font-size: 250%;
+    border-color: var(--Cream-color);
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.8);
     color: var(--Cream-color);
-
 }
 
 figure .title-highlight {
     background: rgba(255, 255, 255, .6);
     padding: 0 10px;
 }
+
+h2.my-projects {
+    padding: 20px 3%;
+    font-size: 250%;
+    color: var(--Cream-color);
+}
+
 
 /* END FIGURE STYLES */
 
